@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      - main
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: action/checkout@v3
+      
+      -name: khai bao docker hub
+      
