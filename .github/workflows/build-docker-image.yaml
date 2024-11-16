@@ -36,4 +36,4 @@ jobs:
       # Bước 4: Push Docker image lên Docker Hub
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERsNAME }}/simple-nodejs-web:latest
+          docker push ${{ secrets.DOCKER_USERSNAME }}/simple-nodejs-web:latest
