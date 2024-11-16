@@ -25,15 +25,15 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Debug DOCKER_USERNAME
-        run: echo ${{ secrets.DOCKER_USERNAME }}
+        run: echo ${{ secrets.DOCKER_USERSNAME }}
 
 
       # Bước 3: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-web:latest .
+          docker build -t ${{ secrets.DOCKER_USERSNAME }}/simple-nodejs-web:latest .
 
       # Bước 4: Push Docker image lên Docker Hub
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-web:latest
+          docker push ${{ secrets.DOCKER_USERsNAME }}/simple-nodejs-web:latest
